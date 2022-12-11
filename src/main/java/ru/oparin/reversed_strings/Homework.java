@@ -9,6 +9,7 @@ public class Homework implements StringReverse {
 
     @Override
     public String reverse1(String str) {
+        if (str == null || str.length() == 0) return str;
         StringBuilder word = new StringBuilder();
         StringBuilder result = new StringBuilder();
         for (int i = 0; i < str.length(); i++) {
@@ -46,6 +47,7 @@ public class Homework implements StringReverse {
 
     @Override
     public String reverse3(String str) {
+        if (str == null || str.length() == 0) return str;
         String[] split = str.split("\\s+");
         StringBuilder word = new StringBuilder();
         StringBuilder result = new StringBuilder();
